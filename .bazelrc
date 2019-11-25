@@ -1,1 +1,4 @@
 build --symlink_prefix=.bazel/
+
+test --test_summary=none --test_output=errors
+

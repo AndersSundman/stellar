@@ -4,3 +4,9 @@ cc_library(
     hdrs = ["rocket.hpp"],
     visibility = ["//visibility:public"],
 )
+
+cc_test(
+    name = "rocket_test",
+    srcs = ["rocket_test.cpp"],
+    deps = [":rocket"],
+)
