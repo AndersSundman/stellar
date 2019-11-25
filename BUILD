@@ -1,4 +1,5 @@
 cc_binary(
     name = "stellar",
-    srcs = ["main.cpp"]
+    srcs = ["main.cpp"],
+    deps = ["//rocket"]
 )
