@@ -4,9 +4,14 @@ cc_binary(
     deps = ["//rocket"]
 )
 
+filegroup(
+    name = "docs",
+    srcs = ["README.md", "COPYING"],
+)
+
 genrule(
     name = "stellar_bundle",
-    srcs = ["README.md", ":stellar"],
+    srcs = [":docs", ":stellar"],
     outs = ["stellar.tar.gz"],
     cmd = "tar cfz $(OUTS) $(SRCS) --transform 's,^bazel-out/.*/bin/,bin/,'"
 )
