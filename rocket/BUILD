@@ -8,5 +8,6 @@ cc_library(
 cc_test(
     name = "rocket_test",
     srcs = ["rocket_test.cpp"],
+    tags = ["wip"],
     deps = [":rocket"],
 )
