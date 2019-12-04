@@ -6,6 +6,7 @@ int main(int argc, char const * argv[]) {
 
     Rocket rocket;
     rocket.launch();
+    rocket.cruise();
 
     return 0;
 }
